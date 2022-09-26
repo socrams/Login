@@ -14,7 +14,7 @@ import { provideStorage,getStorage } from '@angular/fire/storage';
 
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent], 
   imports: [BrowserModule, 
             IonicModule.forRoot(), 
             AppRoutingModule, 
