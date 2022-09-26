@@ -20,7 +20,7 @@ export class LoginPage implements OnInit {
 		private router: Router
 	) {}
 
-	// Easy access for form fields
+	
 	get email() {
 		return this.credentials.get('email');
 	}
@@ -44,7 +44,7 @@ export class LoginPage implements OnInit {
 		await loading.dismiss();
 
 		if (user) {
-			this.router.navigateByUrl('/register', { replaceUrl: true });
+			this.router.navigateByUrl('/home', { replaceUrl: true });
 		} else {
 			this.showAlert('Registration failed', 'Please try again!');
 		}
@@ -72,4 +72,7 @@ export class LoginPage implements OnInit {
 		});
 		await alert.present();
 	}
+	reg(){
+		this.router.navigateByUrl('/register', { replaceUrl: true });
+	  }
 }
