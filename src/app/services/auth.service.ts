@@ -20,15 +20,17 @@ export class AuthService {
 			return null;
 		}
 	}
-
-	async login({ email, password }) {
-		try {
-			const user = await signInWithEmailAndPassword(this.auth, email, password);
-			return user;
-		} catch (e) {
-			return null;
-		}
-	}
+	// login ({email,password}){
+	// 	const user = signInWithEmailAndPassword(this.auth,email,password).then();
+	// }
+	 async login({ email, password }) {
+	 	try {
+	 		const user = await signInWithEmailAndPassword(this.auth, email, password);
+	 		return user;
+	 	} catch (e) {
+	 		return null;
+	 	}
+	 }
 
 	logout() {
 		return signOut(this.auth);

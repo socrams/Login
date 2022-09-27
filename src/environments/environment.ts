@@ -10,6 +10,7 @@ export const environment = {
     apiKey: 'AIzaSyBK9s8ANG-G04-DGZBBEnu75vsze1nNOy8',
     authDomain: 'beltran-ionic.firebaseapp.com',
     messagingSenderId: '472669729928',
+    //appdomain, authid ng build --configuration
   },
   production: false
   
