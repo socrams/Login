@@ -76,3 +76,49 @@ export class LoginPage implements OnInit {
 		this.router.navigateByUrl('/register', { replaceUrl: true });
 	  }
 }
+
+// //login with ionic?
+// {
+//   success: (obj) => {
+//     //success
+//   },
+//   error: (err) => {
+//     //Error
+//   }
+// }
+
+
+// login(account) {
+// let CBUser = new CB.CloudUser();
+// CBUser.set('username', account.username);
+// CBUser.set('password', account.password);
+// return new Promise((resolve, reject) =>{
+//   CBUser.logIn({
+//     success: (user) => {
+//       //Login successful
+//       resolve(user)
+//     },
+//     error: (error) => {
+//       reject(error)
+//       //Error in user login.
+//     }
+//   })
+//  })
+// }
+
+
+// this.user.login(this.account).then( user => {
+//   //login successful
+//   this.navCtrl.push(MainPage);
+// }).catch( err => {
+//   this.navCtrl.push(MainPage);
+//   // Unable to log in
+//   let toast = this.toastCtrl.create({
+//     message: this.loginErrorString,
+//     duration: 3000,
+//     position: 'top'
+//   });
+//   toast.present();
+// });
+
+
